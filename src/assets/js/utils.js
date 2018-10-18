@@ -4,6 +4,7 @@
 //共用方法
 import { Message, Loading } from 'element-ui';
 import axios from 'axios';
+//如果是?aaa=1&bbb=2的方式请求接口需要序列化时需要引入 import qs from 'qs';
 
 //消息提示
 function _toast(msg, type) {
@@ -51,18 +52,13 @@ function myFetch(url, params, methods) {
       method: methods || 'GET',
       url: url,
       headers: {
-        "Content-Type": 'application/json'
-      },
-    };
-    //除登录接口外都需要添加tooken
-    if (url !== 'login') {
-      let access_token = 'weimob ' + getCookie("access_token");
-      let tooken = getCookie("access_token");
-      config.headers["Authorization"] = access_token;
-      config.headers["token"] = tooken;
-    }
+       "Content-Type": 'application/json',
+//如果是以http://xxx.com?aaa=1&bbb=2的方式请求接口需要改成'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+            },
+        };
     if (methods && (methods == 'post' || methods == 'POST')) {
-      config.data = params || $.param(params); //序列化入参
+         config.data = params;
+//如果是以http://xxx.com?aaa=1&bbb=2的方式请求接口需要改成config.data = qs.stringify(params); 
     } else {
       config.params = params;
     }

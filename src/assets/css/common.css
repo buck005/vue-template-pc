@@ -1,0 +1,347 @@
+/* CSS Reset */
+body,html{
+  /*line-height: 100%;*/
+  font-weight: 400;
+  -webkit-overflow-scrolling: touch;/*解决苹果手机滑动不流畅的问题*/
+  font-family: Microsoft YaHei,SimSun,PingFangSC-Regular,SimHei,KaiTi;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+fieldset, img {
+  border: 0;
+}
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+/* remember to define focus styles! */
+:focus, :active {
+  outline: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+  font-style: inherit;
+  font-weight: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: inherit;
+}
+abbr, acronym {
+  border: 0;
+  font-variant: inherit;
+}
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: none;
+}
+code, kbd, samp, tt {
+  font-size: 100%;
+}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea, select {
+  *font-size: 100%;
+}
+input{
+  background:none;
+  outline:none;
+  border:0px;
+}
+input:focus { outline: none; }
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th {
+  text-align: left;
+}
+sup, sub {
+  font-size: 100%;
+  vertical-align: baseline;
+}
+a:link,a:visited{
+  color: #409eff;
+}
+/* remember to highlight inserts somehow! */
+:link, :visited, ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+body{
+  overflow-x: hidden;
+}
+.clear {
+  clear: both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+/* reset over */
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+} 
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+   -webkit-border-radius: 6px;
+} 
+
+ ::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.4);
+  -webkit-border-radius: 6px;
+} 
+ ::-webkit-scrollbar:horizontal{
+  height: 15px;
+} 
+ ::-webkit-scrollbar-thumb:horizontal {   
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.4);
+  -webkit-border-radius: 6px;
+} 
+
+/*解决vue闪烁问题*/
+
+[v-cloak] {
+  display: none;
+}
+
+.p-t-b-30{
+  padding:30px 0;
+}
+.content-padding{
+  padding:0 13.5%;
+}
+.color-fff{
+  color: #fff;
+}
+.font12{
+  font-size: 12px;
+}
+.font14{
+  font-size: 14px;
+}
+.font16{
+  font-size: 16px;
+}
+.font18{
+  font-size: 18px;
+}
+.font20{
+  font-size: 20px;
+}
+.font22{
+  font-size: 22px;
+}
+.font24{
+  font-size: 24px;
+}
+.LH12{
+  line-height: 12px;
+}
+.LH20{
+  line-height: 20px;
+}
+.LH24{
+  line-height: 24px;
+}
+.LH25{
+  line-height: 25px;
+}
+.LH28{
+  line-height: 28px;
+}
+.opacity7{
+  opacity: 0.7;
+}
+.PTB5{
+  padding: 5px 0;
+}
+.PL25{
+  padding-left: 25px;
+}
+.MR6{
+  margin-right: 6px;
+}
+.MR20{
+  margin-right: 20px;
+}
+.MB10{
+  margin-bottom: 10px;
+}
+.MB12{
+  margin-bottom: 12px;
+}
+.MB20{
+  margin-bottom: 20px;
+}
+.MB25{
+  margin-bottom: 25px;
+}
+.MR10{
+  margin-right: 10px;
+}
+.MTB20{
+  margin: 20px 0;
+}
+.color4D{
+  color: #4D4D4D;
+}
+.colorFFF{
+  color: #fff;
+}
+.colorFF9{
+  color: #FF9D43;
+}
+.color999{
+  color: #999;
+}
+.color666{
+  color: #666;
+}
+.color80{
+  color: #808080;
+}
+.bold{
+  font-weight: bold;
+}
+.cursor{
+  cursor: pointer;
+}
+.width50P{
+  width: 50%;
+}
+.width100P{
+  width: 100%;
+}
+.height100P{
+  height: 100%;
+}
+.min-width{
+  min-width: 1000px;
+}
+.whiteBkg{
+  background: #fff;
+}
+.textC{
+  text-align: center;
+}
+.radius50{
+  border-radius: 50%;
+}
+.positionR{
+  position: relative;
+}
+/* element-ui样式覆盖 */
+.el-submenu__title,.el-submenu .el-menu-item{
+  height: 40px!important;
+  line-height: 40px;
+}
+.navHeight{
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+}
+.el-menu-item-group__title{
+  padding: 0;
+}
+.dropdownBtn,.commonAddBtn,.baseSelect .el-input__inner{
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.baseSelect .el-input__icon{
+  height: 30px;
+  line-height: 30px;
+}
+.baseBgColor{
+  background-color: #ecf5ff;
+}
+.logList .el-dialog__body{
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.logList .el-dialog{
+  width: 70%;
+}
+.ettlementList .el-date-editor .el-range-input{
+  width: 50%;
+}
+.el-table--mini, .el-table--small, .el-table__expand-icon,.el-input--mini{
+  font-size: 14px;
+}
+.el-input--mini .el-input__inner,.el-pagination button, .el-pagination span:not([class*=suffix]),.el-pager li{
+  height: 30px;
+  line-height: 30px;
+}
+.container{
+  margin: 20px;
+  height: calc(100vh - 135px);
+}
+.channel-top{
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.channel-top .el-form{
+  float: right;
+}
+footer.pagination-footer{
+   position: fixed;
+    bottom: 0;
+    width: calc(100% - 230px);
+    height: 50px;
+    border-top: 1px solid #dee5e7;
+    background: #fff;
+    padding: 0 15px;
+    background: #fff;
+}
+#revenueDay .el-range-separator{
+  line-height: 30px;
+}
